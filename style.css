@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+.navbar .navbar-nav .nav-link {
+  color: #f8f8f8;
+  font-size: 1.4em;
+  padding: 0.5em 1em;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 30px;
+font-weight: 700;
+
+}
+.navbar .navbar-nav .nav-link:hover{
+  color: rgb(104, 77, 2);
+  background-color: rgb(216, 178, 74);
+  border-radius: 30px;
+  transition: 0.7s ease-in-out;
+  
+}
+@media screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+  .navbar-brand {
+    margin-right: 0;
+    padding: 0 1em;
+  }
+  .navbar-nav {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+.navbar-brand {
+  margin-right: 0;
+}
+.navbar-brand img {
+  width:140px;
+}
+.navbar .navbar-nav {
+  border-top: 2px solid #fff3f3;
+  margin-top: 0.5em;
+} 
+.active{
+  color: rgb(104, 77, 2);
+  background-color: rgb(139, 135, 133);
+  border-radius: 30px;
+  transition: 0.7s ease-in-out;
+}
+/* @media screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+  .navbar .container-fluid {
+    flex-direction: column;
+  }
+  .navbar .navbar-nav .nav-item {
+    padding: 0.5em 1em;
+  }
+  .navbar-nav {
+    border-bottom: 2px solid #000000;
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #070606;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav {
+  border-top: 2px solid #000000;
+  margin-top: 0.5em;
+} */
+
+h1 {
+  color: #7CFC00;
+}
+label {
+ display: block;
+}
+/* start general carousel styles */
+.carousel {
+  height: 190px;
+  margin: 12px;
+}
+.carousel-inner {
+  overflow: visible;
+}
+.carousel ul {
+  -webkit-transform: translateY(36%);
+  -ms-transform: translateY(36%);
+  transform: translateY(36%);
+  padding-left: 7px;
+}
+.carousel li {
+  float: left;
+  font-size: 13px;
+  margin: 0 3%;
+  text-align: center;
+  width: 20%;
+  list-style-type: none;
+}
+.carousel li:first-child {
+  margin-left: 1%;
+}
+.carousel li:last-child {
+  margin-right: 1%;
+}
+.carousel li {
+  margin: 0 1.64%;
+  width: 30%;
+}
+.carousel img {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  width: 100%;
+}
+.carousel label {
+  padding: 0;
+  -webkit-transition: all .34s linear;
+  transition: all .34s linear;
+}
+.carousel input[type="radio"] {
+  display: none;
+}
+.carousel input[type="radio"]:checked + label {
+  border-color: transparent;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 10px #79f584;
+  cursor: pointer;
+  padding: 0;
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition: all .34s linear;
+  transition: all .34s linear;
+  z-index: 2;
+}
+.carousel li:first-child input[type="radio"]:checked + label  {
+  position: relative;
+  -ms-transform: translateX(25%) scale(1.5);
+  -webkit-transform: translateX(25%) scale(1.5);
+  transform: translateX(25%) scale(1.5);
+}
+.carousel li:last-child input[type="radio"]:checked + label  {
+  position: relative;
+  -ms-transform: translateX(-25%) scale(1.5);
+  -webkit-transform: translateX(-25%) scale(1.5);
+  transform: translateX(-25%) scale(1.5);
+}
+.about-section {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card {
+  padding: 10px 0px 10px;
+  /* background-image: url(/images/cholate.avif); */
+  min-height: 400px;
+  max-height: 600px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px #79b47c7a;
+}
+#rd{
+  background-image: url(/images/chol.avif);
+  background-size: cover;
+}
+#ed{
+  background-image: url(/images/chai.avif);
+  background-size: cover;
+}
+#fd{
+  background-image: url(/images/dabba.avif);
+  background-size: cover;
+}
+.card-body {
+  padding: 0px 15px;
+  color: white;
+}
+
+.panel-default {
+  border: none;
+}
+
+.panel-group {
+  position: absolute;
+  bottom: -1px;
+  margin-bottom: 0px;
+  width: 100%;
+  padding-right: 0px;
+}
+
+.panel-group .panel-heading+.panel-collapse>.panel-body, .panel-group .panel-heading+.panel-collapse>.list-group {
+  border: none;
+}
+
+.panel-group .panel {
+  border-radius: 0px 0px 8px 8px;
+  background-color:transparent;
+  backdrop-filter: blur(10px);
+}
+
+.panel-body {
+  min-height: 250px;
+  overflow: auto;
+  border-radius: 0px 0px 8px 8px;
+  padding: 0px 15px 10px;
+  color: #f5ebeb;
+}
+
+.panel-default>.panel-heading {
+  background-color: transparent;
+}
+
+.panel-heading {
+  text-align: center;
+  padding: 0px;
+  height: 35px;
+  border: none;
+}
+
+.panel-button {
+  padding: 20px;
+  background: #999999;
+  border-radius: 100%;
+  position: relative;
+  top: -13px;
+  z-index: 9999;
+}
+
+.panel-button .plus-minus:before{
+  content: "\f067";
+  font-family: "FontAwesome";
+}
+
+.panel-button[aria-expanded="true"] .plus-minus:before{
+  content: "\f068";
+  font-family: "FontAwesome";
+}
+
+
+
+a.panel-button:hover, a.panel-button:focus {
+  text-decoration: none;
+}
+
+a.panel-button {
+  font-size: 18px;
+  color: #333333;
+  box-shadow: 0px 3px 7px #0000004a;
+}
+
+.card-section {
+  height: 100vh;
+  display: table;
+  width: 100%;
+  /* background-color: slategray; */
+overflow: hidden;
+}
+
+.card-section > .inner {
+  display: table-cell;
+  vertical-align: middle;
+  
+}
+
+@media (max-width: 991px) {
+  .card {
+      margin-top: 20px;
+      margin-bottom: 20px;
+  } 
+} 
+
+@media (max-width: 768px) {
+.card {
+  min-height: 300px;
+}
+.panel-body {
+  max-height: 200px;
+  font-size: 15px;
+  padding: 0px 5px;
+}
+} 
+
+
+section.sec {
+  background-image: url(https://teahee.co.uk/wp-content/uploads/2023/09/what-are-the-main-types-of-tea-4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+
+#advertisement {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#shopNowButton{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+background:rgba(207, 191, 162, 0.425);
+  border-radius: 5px;
+}
+#shopNowButton:hover{
+  background-color: #835807;
+}
+@media (max-width: 768px) {
+  #advertisement {
+    max-width: 80%;
+  }
+}
+
+
+.tea-mate-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s;
+}
+
+.tea-mate-card:hover {
+  transform: scale(1.05);
+  border-color: #7CFC00;
+}
+
+.tea-mate-img {
+  width: 100%; /* Ensure the image covers the entire card */
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd; /* Add a border to separate the image from the card title */
+}
+
+.tea-mate-title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333333;
+  margin-top: 10px;
+}
+
+.tea-mate-title:hover {
+  color: #7CFC00;
+}
+footer li{
+padding-right: 20px;
+font-size: 20px;
+font-weight: 800;
+}
+
+
+footer{
+  background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-delicious-coffee-shop-hand-drawn-brown-background-picture-image_993143.jpg);
+}
