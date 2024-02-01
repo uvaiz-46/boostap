@@ -74,7 +74,19 @@ font-weight: 700;
   border-top: 2px solid #000000;
   margin-top: 0.5em;
 } */
-
+#sur{
+  height: 110vh;
+}
+@media screen and (max-width: 780px)  {
+  #sur{
+    height: 69vh;
+  }
+}
+@media screen and (max-width: 450px)  {
+  #sur{
+    height: 50vh;
+  }
+}
 h1 {
   color: #7CFC00;
 }
